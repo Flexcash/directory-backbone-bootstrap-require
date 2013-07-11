@@ -7,8 +7,8 @@ define(function (require) {
 
         Employee = Backbone.Model.extend({
 
-//            urlRoot: "http://localhost:3000/employees",
-            urlRoot: "/directory-rest-php/employees",
+           urlRoot: "http://localhost:3000/employees",
+            // urlRoot: "/directory-rest-php/employees",
 
             initialize: function () {
                 this.reports = new EmployeeCollection();
@@ -21,8 +21,8 @@ define(function (require) {
 
             model: Employee,
 
-//            url: "http://localhost:3000/employees"
-            url: "/directory-rest-php/employees"
+           url: "http://localhost:3000/employees"
+            // url: "/directory-rest-php/employees"
 
         }),
 
